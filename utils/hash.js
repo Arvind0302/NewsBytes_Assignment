@@ -1,7 +1,8 @@
 const crypto = require('crypto');
 
 const generateHash = (url, salt) => {
-  return crypto.createHash('sha256').update(url + salt).digest('hex');
+  let hash = crypto.createHash('sha256').update(url + salt).digest('hex');
+  return hash.substring(0, 10); 
 };
 
 module.exports = generateHash;

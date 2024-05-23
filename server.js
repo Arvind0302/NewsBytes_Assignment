@@ -8,7 +8,7 @@ dotenv.config({path:"./config/config.env"});
 connectDb();
 const app = express();
 app.use(bodyParser.json());
-// app.use('/', urlRoutes);
+app.use('/', urlRoutes);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is working on http://localhost:${process.env.PORT}`);
