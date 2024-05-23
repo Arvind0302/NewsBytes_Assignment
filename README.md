@@ -62,7 +62,7 @@ This endpoint is used to create a shortened URL.
      -H "Content-Type: application/json" \
      -d '{"originalUrl": "https://example.com", "clickLimit": 5}'
  ```
-### 2. `/:hash` (GET)
+### 2. `/:hash`
 
 This endpoint is used to redirect to the original URL based on the hash.
 
