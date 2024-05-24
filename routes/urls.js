@@ -80,7 +80,7 @@ router.post('/shorten', shortenUrl);
  * @swagger
  * /{hash}:
  *   get:
- *     summary: Redirect to the original URL
+ *     summary: Redirect to the original URL. There will be no response it will redirect to the original URL.
  *     tags: [Url]
  *     parameters:
  *       - in: path
