@@ -1,6 +1,7 @@
 # NewsBytes_Assignment
    
    **Deployed Link** : https://newsbytes-assignment.onrender.com/api-docs
+    (This free instance will spin down with inactivity, which can delay requests by 50 seconds for the first time)
 
 ## Introduction
 
