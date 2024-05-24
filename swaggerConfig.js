@@ -9,6 +9,9 @@ const options = {
       description: 'API documentation for the URL shortening service',
     },
     servers: [
+        {
+ url:"https://newsbytes-assignment.onrender.com"
+        },
       {
         url: `http://localhost:${process.env.PORT||4000}`,
       },

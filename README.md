@@ -1,4 +1,6 @@
 # NewsBytes_Assignment
+   
+   **Deployed Link** : https://newsbytes-assignment.onrender.com/api-docs
 
 ## Introduction
 
