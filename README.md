@@ -16,6 +16,7 @@ This project provides a URL-shortening service with the ability to set a click l
 - Redirects to the original URL and tracks the number of clicks.
 - Ensures the generated hash is unique.
 - Prevents the creation of duplicate shortened URLs for the same original URL.
+- Provides API documentation using Swagger.
 
 ## Architecture Choice and Reasoning
 
@@ -76,5 +77,16 @@ This endpoint is used to redirect to the original URL based on the hash.
   - `hash` (string): The hash part of the shortened URL.
 #### Example Request
   ```sh
-curl -X GET https://newsbytes-assignment.onrender.com/abcd1
+curl -X GET https://newsbyte![Screenshot from 2024-05-24 13-34-44](https://github.com/Arvind0302/NewsBytes_Assignment/assets/82073257/edf5f7c8-c045-4c65-96cd-099ea41a1e18)
+s-assignment.onrender.com/abcd1
 ```
+
+## Postman Testing
+
+1. Shortening URL with limiting usage.
+   
+![Screenshot from 2024-05-24 13-34-07](https://github.com/Arvind0302/NewsBytes_Assignment/assets/82073257/ceacf5d9-870f-49fa-bf54-6d7eb3429c22)
+
+2. Decoding the short URL.
+   
+![Screenshot from 2024-05-24 13-34-44](https://github.com/Arvind0302/NewsBytes_Assignment/assets/82073257/a72f1ddc-ee6e-460f-bd73-2e4e8c238130)
