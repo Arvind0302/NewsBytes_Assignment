@@ -51,7 +51,8 @@ const decodeUrl =  async (req, res) => {
       if (url) {
         if (url.clickLimit === null || url.clickCount < url.clickLimit) {
           url.clickCount++;
-          await url.save();
+          if(url.clickCount==url.clickLimit) await url.deleteOne();
+          else await url.save();
           return res.redirect(url.originalUrl);
         } else {
           return res.status(410).json('URL usage limit reached');
